@@ -4,7 +4,11 @@ namespace :instela do
 
     require 'rest-client'
 
-    (Entry.first.id+10).downto(1) do |i|
+    (Entry.first.id+10).downto(1) do |i| # İlk çalıştırmada kafa karıştırır.
+                                         # Halihazırda DB'de veri olduğu için böyle bir yola gittim.
+                                         # 'Entry.first.id+10' dan başlayıp '1' e kadar git diyor. (decremental)
+                                         # İlk çalıştırmada 'Entry.first.id+10' yerine elle bir sayı
+                                         # (en son yazılmış entry-nin ID-si) verin.
       begin
         entry = RestClient.get("https://instela.com/api/v2/entries/#{i}")
         favourite = RestClient.get("https://instela.com/api/v2/entries/#{i}/favourites")
