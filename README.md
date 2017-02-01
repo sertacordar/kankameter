@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby 2.4 Rails 5.0.1 ile hazırlanmış, yalnızca rake görevleri ve basit model ilişkileri içerir.
 
-Things you may want to cover:
+* Veri çekmek için lib/tasks/fetch.rake
+* Analiz etmek için lib/tasks/analysis.rake
+* Model ilişkileri için app/models dizinini inceleyin.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Örnek çıktılar için: [instela kankameter](https://tr.instela.com/instela-kankameter--19971301)
