@@ -1,3 +1,5 @@
+*.keep
+.keep
 *.rbc
 capybara-*.html
 .rspec
